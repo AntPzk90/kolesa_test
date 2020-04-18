@@ -1,0 +1,70 @@
+.header {
+  background-image: url('../img/background_mobile.jpg');
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.header__wrapper {
+  padding-top: 40px;
+}
+.header__top {
+  display: flex;
+}
+.header__top--mobile{
+  background-color: $dark-grey;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 40px;
+}
+.header__logo {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -44px;
+}
+.header__logo--tab {
+  display: none;
+}
+.header__logo--desk {
+  display: none;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header__town-link {
+  margin-right: auto;
+  width: 50%;
+}
+.header__menu-btn {
+  margin-left: auto;
+  height: 27px;
+  width: 40px;
+  position: relative;
+  background-color: transparent;
+  border: none;
+}
+.header__menu-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 27px;
+  width: 40px;
+  background-image: url("../img/burger_menu.png");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
+.header__tel-link {
+  display: none;
+}
+.header__nav {
+  flex-grow: 1;
+}
+.header__menthor {
+  order: 1;
+}
+

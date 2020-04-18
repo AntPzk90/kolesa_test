@@ -1,0 +1,23 @@
+.menthor-list{
+  display: none;
+  @include reset-list;
+  order: 1;
+  width: 100%;
+}
+.menthor-list__link {
+  display: block;
+  width: 65%;
+  max-width: 196px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 17px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  text-decoration: none;
+  color: $white;
+  font-weight: 400;
+  border: 2px solid $orange;
+  margin: 0 auto;
+  border-radius: 5px;
+}
