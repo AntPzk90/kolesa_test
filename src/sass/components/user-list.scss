@@ -1,11 +1,29 @@
 .user-list {
-  display: none;
   @include reset-list;
   width: 100%;
   margin-bottom: 10px;
+  @media screen and (min-width: $tab) {
+    border-radius: 15px 0px 15px 15px;
+    box-sizing: border-box;
+    padding: 30px;
+  }
+  @media screen and (min-width: $desk) {
+    width: auto;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+  }
 }
 .user-list__item{
   margin-bottom: 5px;
+  @media screen and (min-width: $desk) {
+    margin-bottom: 0;
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 .user-list__link {
   display: inline-block;
@@ -19,4 +37,45 @@
   text-decoration: none;
   color: $white;
   font-weight: 400;
+  &:hover,
+  &:active {
+    color: $orange;
+  }
+  @media screen and (min-width: $tab) {
+    color: #000;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: $desk) {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    line-height: 21px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-decoration: none;
+    color: $white;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+}
+.header__user--tab-active {
+  display: block;
+  width: 165px;
+  height: 110px;
+  position: absolute;
+  top: 110px;
+  right: 36px;
+  animation: fadeIn ease-in .3s;
+  background-color: $white;
+}
+@keyframes fadeIn {
+  0%{right: -200px;}
+  70%{right: 230px;}
+  100%{right: 36px}
 }

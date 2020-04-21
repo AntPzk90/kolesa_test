@@ -3,40 +3,87 @@
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
+  position: relative;
+  @media screen and (min-width: $tab) {
+    background-image: url('../img/background_tab.jpg');
+  }
+  @media screen and (min-width: $desk) {
+    background-image: url('../img/background_desk.jpg');
+  }
 }
 .header__wrapper {
   padding-top: 40px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $tab) {
+   padding-top: 14px;
+   padding-bottom: 50px;
+  }
 }
 .header__top {
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @media screen and (min-width: $tab) {
+    align-items: center;
+    justify-content: space-between;
+  }
 }
-.header__top--mobile{
-  background-color: $dark-grey;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding-top: 40px;
+.header__logo-picture {
+  @media screen and (min-width: $tab) {
+    margin-right: 15px;
+  }
 }
 .header__logo {
   position: absolute;
   top: 10px;
   left: 50%;
   margin-left: -44px;
+  &:hover {
+    transform: scale(1.1);
+  }
+  @media screen and (min-width: $tab) {
+    position: static;
+    margin: 0;
+    height: 108px;
+  }
+  @media screen and (min-width: $desk) {
+    margin-right: 2%;
+  }
 }
-.header__logo--tab {
-  display: none;
-}
-.header__logo--desk {
-  display: none;
-}
-.header__top {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+.header__logo-img {
+  height: 88px;
+  width: 88px;
+  @media screen and (min-width: $tab) {
+    height: 108px;
+    width: 108px;
+  }
+  @media screen and (min-width: $desk) {
+    height: 111px;
+    width: 111px;
+  }
 }
 .header__town-link {
   margin-right: auto;
   width: 50%;
+  font-size: 14px;
+  text-decoration: none;
+  color: $white;
+  box-sizing: border-box;
+  padding-left: 22px;
+  padding-top: 5px;
+  &:hover,
+  &:active {
+    color: $orange;
+  }
+  @media screen and (min-width: $tab) {
+   width: auto;
+   padding: 0;
+   margin: 0;
+  }
+  @media screen and (min-width: $desk) {
+    font-size: 16px;
+    margin-right: 2.5%;
+  }
 }
 .header__menu-btn {
   margin-left: auto;
@@ -45,6 +92,15 @@
   position: relative;
   background-color: transparent;
   border: none;
+  margin-right: 25px;
+  @media screen and (min-width: $tab) {
+    order: 1;
+    margin: 0;
+    margin-left: 20px;
+  }
+  @media screen and (min-width: $desk) {
+    display: none;
+  }
 }
 .header__menu-btn::after {
   content: "";
@@ -58,13 +114,189 @@
   background-position: 50%;
   background-repeat: no-repeat;
 }
+.header__menu-btn--close::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 31px;
+  width: 31px;
+  background-image: url("../img/close_icon.png");
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+}
 .header__tel-link {
   display: none;
+  @media screen and (min-width: $tab) {
+    display: inline;
+  }
+  @media screen and (min-width: $desk) {
+   margin-right: 1.5%;
+  }
 }
 .header__nav {
+  display: none;
   flex-grow: 1;
+  @media screen and (min-width: $tab) {
+    display: block;
+  }
+  @media screen and (min-width: $desk){
+    margin-right: 5.2%;
+  }
+}
+.header__user {
+  display: none;
+  @media screen and (min-width: $desk) {
+    display: block;
+  }
 }
 .header__menthor {
+  display: none;
   order: 1;
+  @media screen and (min-width: $tab) {
+    display: block;
+  }
+  @media screen and (min-width: $desk) {
+    order: 0;
+    margin-right: 40px;
+  }
 }
+.header__main {
+  padding-top: 65px;
+  @media screen and (min-width: $tab) {
+    padding-top: 120px;
+    padding-left: 430px;
+  }
+  @media screen and (min-width: $desk) {
+    padding-left: 560px;
+  }
 
+}
+.header__main-slogan {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 43px;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $tab) {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 0;
+    text-align: left;
+    margin-bottom: 37px;
+  }
+  @media screen and (min-width: $desk) {
+    font-size: 42px;
+    line-height: 48px;
+    max-width: 623px;
+    margin-right: 10px;
+    letter-spacing: 1px;
+  }
+}
+.header__orange-text {
+  color: $orange;
+}
+.header__main-dscr {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 65px;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: $tab) {
+    font-size: 14px;
+    line-height: 18px;
+    text-align: left;
+    box-sizing: border-box;
+    padding-left: 90px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: $desk) {
+    max-width: 620px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-left: 240px;
+    margin-right: 40px;
+    position: relative;
+    margin-bottom: 58px;
+    &:after {
+      content: "";
+      width: 179px;
+      height: 65px;
+      position: absolute;
+      top: -12px;
+      left: 45px;
+      background-image: url("../img/stars.png");
+      background-size: cover;
+      background-position: 50%;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.header__sroll {
+  display: none;
+  @media screen and (min-width: $tab) {
+    display: block;
+  }
+}
+.header__reg-btn {
+  width: 100%;
+  max-width: 304px;
+  margin: 0 auto;
+  border-radius: 4px;
+  @media screen and (min-width: $desk) {
+    margin-right: 110px;
+  }
+}
+.header__top--menu-active {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  right: 0;
+  animation: navAnimate ease-in 0.4s;
+  .header__nav {
+    display: block;
+  }
+  .header__menthor {
+    display: block;
+  }
+  .header__user {
+    display: block;
+  }
+  .header__menu-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 31px;
+    width: 31px;
+    background-image: url("../img/close_icon.png");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+  }
+  @media screen and (min-width: $tab) {
+    height: 165px;
+    width: 110px;
+  }
+}
+@keyframes mouseAnimate {
+  0%{top: 10px;}
+  100%{top: 20px}
+}
+@keyframes navAnimate {
+  0%{left: -320px;}
+  70%{left: 100px;}
+  100%{left: 0}
+}

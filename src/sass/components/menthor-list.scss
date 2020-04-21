@@ -1,8 +1,16 @@
-.menthor-list{
-  display: none;
+.menthor-list {
   @include reset-list;
   order: 1;
   width: 100%;
+  @media screen and (min-width: $tab) {
+    order: 0;
+    width: 150px;
+  }
+  @media screen and (min-width: $desk) {
+    order: 0;
+    width: 200px;
+    margin-right: 2.5%;
+  }
 }
 .menthor-list__link {
   display: block;
@@ -19,5 +27,15 @@
   font-weight: 400;
   border: 2px solid $orange;
   margin: 0 auto;
-  border-radius: 5px;
+  border-radius: 4px;
+  background-color: transparent;
+  &:hover,
+  &:active {
+    background-color: $orange;
+  }
+  transition: background ease .5s;
+  @media screen and (min-width: $tab) {
+    width: 100%;
+    margin: 0;
+  }
 }

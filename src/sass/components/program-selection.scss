@@ -1,0 +1,120 @@
+.program-selection__wrapper {
+  @media screen and (min-width: $tab) {
+    padding-top: 85px;
+  }
+  @media screen and (min-width: $desk) {
+    padding-top: 110px;
+  }
+}
+.program-selection__title {
+  color: $blue;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+  @media screen and (min-width: $tab) {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 75px;
+  }
+  @media screen and (min-width: $desk) {
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 1px;
+    margin-bottom: 92px;
+  }
+}
+.program-selection__list {
+  @include reset-list;
+  @media screen and (min-width: $tab) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.program-selection__list-item-wrapper {
+  position: relative;
+  z-index: 0;
+  width: 100%;
+  margin: 0 auto;
+  height: 412px;
+  @media screen and (min-width: $tab) {
+    height: 450px;
+  }
+}
+
+.program-selection__picture {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+.program-selection__img {
+  vertical-align: bottom;
+  position: relative;
+  z-index: 1;
+  object-fit: cover;
+  width: 100%;
+}
+.program-selection__mini-title {
+  background: rgba(0, 0, 0, .52);
+  margin-top: -100px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 27px 64px;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  transition: background ease .3s;
+  @media screen and (min-width: $tab) {
+    padding-top: 22px;
+  }
+  @media screen and (min-width: $desk) {
+    padding: 20px 109px;
+  }
+}
+.program-selection__link{
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  color: $white;
+  text-decoration: none;
+  @media screen and (min-width: $tab) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  @media screen and (min-width: $desk) {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+.program-selection__link-text--more-info {
+  display: none;
+}
+.program-selection__mini-title--hover {
+  background-color: transparent;
+  z-index: 3;
+}
+.program-selection__list-item-overlay {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .52);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 1;
+  animation: overlayOpacity ease 0.3s;
+}
+
+@keyframes overlayOpacity {
+  0%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+

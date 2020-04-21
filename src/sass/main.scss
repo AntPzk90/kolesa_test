@@ -1,9 +1,18 @@
-@import 'normalize.scss';
+@import './normalize.scss';
 @import './variables.scss';
 @import './mixins.scss';
 @import './settings.scss';
-
+//header
 @import './components/header.scss';
 @import './components/main-nav.scss';
+@import './components/tel-link.scss';
 @import './components/menthor-list.scss';
 @import './components/user-list.scss';
+@import './components/scroll-block.scss';
+@import './components/btn.scss';
+//main
+@import './components/main-block.scss';
+@import './components/about-menthors.scss';
+@import './components/program-selection.scss';
+@import './components/swiper.scss';
+

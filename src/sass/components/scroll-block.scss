@@ -1,0 +1,79 @@
+.scroll-block {
+  @media screen and (min-width: $tab) {
+    padding-top: 140px;
+  }
+  @media screen and (min-width: $desk) {
+    padding-top: 175px;
+  }
+}
+.scroll-block__btn {
+  height: 42px;
+  width: 24px;
+  display: block;
+  margin: 0 auto;
+  font-size: 0;
+  position: relative;
+  border-radius: 15px;
+  &:hover {
+    &:after {
+      background-color: $orange;
+    }
+  }
+  &:after {
+    content: "";
+    display: block;
+    height: 36px;
+    width: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 2px solid $white;
+    border-radius: 15px;
+    transition: background ease .2s;
+  }
+  &:before {
+    content: "";
+    display: block;
+    height: 8px;
+    width: 2px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: $white;
+    animation: mouseAnimate ease 1s infinite;
+    z-index: 1;
+  }
+  @media screen and (min-width: $desk) {
+    font-size: 12px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-top: 60px;
+    color: $white;
+    height: 80px;
+    width: 130px;
+    &:after {
+      content: "";
+      display: block;
+      height: 36px;
+      width: 18px;
+      position: absolute;
+      top: 5px;
+      left: 55px;
+      border: 2px solid $white;
+      border-radius: 15px;
+    }
+    &:before {
+      content: "";
+      display: block;
+      height: 8px;
+      width: 2px;
+      position: absolute;
+      top: 10px;
+      left: 65px;
+      background-color: $white;
+      animation: mouseAnimate ease 1s infinite;
+    }
+  }
+}

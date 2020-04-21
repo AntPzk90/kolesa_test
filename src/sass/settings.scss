@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,800|Open+Sans&display=swap&subset=cyrillic,cyrillic-ext');
 body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
@@ -14,12 +15,19 @@ body {
 	overflow: hidden;
 }
 .container {
-  max-width: 1024px;
   width: 100%;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0 8px;
+  @media screen and (min-width: $tab) {
+    padding: 0 36px;
+  }
+  @media screen and (min-width: $desk) {
+    padding: 0 80px;
+    max-width: 1440px;
+  }
 }
 .hidden {
   display: none;
 }
+
