@@ -6,8 +6,8 @@
 *.pdf
 *.psd
 *.sublime*
-build/
-swiper/
+package-lock.json
+/build
 node_modules/
 npm-debug.*
 source/css/*.css

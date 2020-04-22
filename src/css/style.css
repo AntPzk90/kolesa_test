@@ -1221,6 +1221,8 @@ body {
   font-weight: 400;
   color: #ffffff;
   text-decoration: none; }
+  .program-selection__link:hover, .program-selection__link:active {
+    color: #fe8057; }
   @media screen and (min-width: 1024px) {
     .program-selection__link {
       font-size: 20px;

@@ -87,6 +87,10 @@
   font-weight: 400;
   color: $white;
   text-decoration: none;
+  &:hover,
+  &:active {
+    color: $orange;
+  }
   @media screen and (min-width: $tab) {
     font-size: 20px;
     line-height: 25px;
