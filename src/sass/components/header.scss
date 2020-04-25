@@ -277,6 +277,15 @@
   top: 0;
   right: 0;
   animation: navAnimate ease-in 0.4s;
+  .header__logo {
+    order: 0;
+    order: 0;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -44px;
+    margin-top: 0;
+  }
   .header__town-link {
     display: none;
   }
