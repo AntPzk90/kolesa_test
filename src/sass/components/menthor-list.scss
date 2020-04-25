@@ -9,7 +9,7 @@
   @media screen and (min-width: $desk) {
     order: 0;
     width: 200px;
-    margin-right: 2.5%;
+    margin-right: 2.7%;
   }
 }
 .menthor-list__link {
@@ -35,7 +35,14 @@
   }
   transition: background ease .5s;
   @media screen and (min-width: $tab) {
-    width: 100%;
+    width: calc(100% - 4px);
     margin: 0;
+    font-size: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+  @media screen and (min-width: $desk) {
+    letter-spacing: .2px;
+    font-size: 12px;
   }
 }

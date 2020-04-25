@@ -3,6 +3,7 @@ body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
   color: $white;
+  overflow-x: hidden;
 }
 .visually-hidden {
 	position: absolute !important;

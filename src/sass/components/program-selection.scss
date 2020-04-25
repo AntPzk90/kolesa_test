@@ -14,6 +14,7 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 45px;
+  letter-spacing: .4px;
   @media screen and (min-width: $tab) {
     font-size: 24px;
     line-height: 29px;
@@ -22,7 +23,7 @@
   @media screen and (min-width: $desk) {
     font-size: 30px;
     line-height: 35px;
-    letter-spacing: 1px;
+    letter-spacing: .6px;
     margin-bottom: 92px;
   }
 }
@@ -70,6 +71,7 @@
   z-index: 1;
   box-sizing: border-box;
   padding: 27px 64px;
+  padding-top: 25px;
   text-align: center;
   margin: 0;
   width: 100%;
@@ -81,10 +83,10 @@
     padding: 20px 109px;
   }
 }
-.program-selection__link{
-  font-size: 16px;
-  line-height: 21px;
-  font-weight: 400;
+.program-selection__link {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: 500;
   color: $white;
   text-decoration: none;
   &:hover,

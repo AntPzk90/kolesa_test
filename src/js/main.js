@@ -36,7 +36,7 @@ $('.header__menu-btn').click(function(){
   if(($(window).width() < 1024)) {
     $('.header__top').toggleClass('header__top--menu-active');
     if($('.header__top').hasClass('header__top--menu-active')){
-      $('.header__wrapper').css('paddingTop', '67px');​
+      $('.header__wrapper').css('paddingTop', '69px');​
     } else {
       $('.header__wrapper').removeAttr('style');
     }
@@ -60,7 +60,7 @@ $(document).ready(function() {
     return Math.floor($(window).width() / 16);
   };
   function calculateSpaceBetween() {
-    return Math.floor($(window).width() / 22.8);
+    return Math.floor($(window).width() / 22);
   };
   function calculateWidth() {
     var result = Math.floor($(window).width() / 1.23);

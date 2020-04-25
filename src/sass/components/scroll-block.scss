@@ -3,7 +3,7 @@
     padding-top: 140px;
   }
   @media screen and (min-width: $desk) {
-    padding-top: 175px;
+    padding-top: 177px;
   }
 }
 .scroll-block__btn {
@@ -53,6 +53,7 @@
     color: $white;
     height: 80px;
     width: 130px;
+    letter-spacing: .3px;
     &:after {
       content: "";
       display: block;

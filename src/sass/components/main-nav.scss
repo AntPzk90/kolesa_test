@@ -4,6 +4,7 @@
   @media screen and (min-width: $tab){
     padding: 0;
     max-width: 330px;
+    margin-top: -1px;
   }
   @media screen and (min-width: $desk) {
    max-width: 370px;
@@ -15,12 +16,12 @@
   position: relative;
   @media screen and (min-width: $tab) {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     align-content: center;
     margin: 0;
     box-sizing: border-box;
-    padding-left: 17px;
+    padding-left: 15px;
     padding-right: 12px;
   }
   @media screen and (min-width: $desk) {
@@ -37,18 +38,21 @@
   position: absolute;
   left: 0;
   bottom: -30px;
-  @media screen and (min-width: $tab){
+  @media screen and (min-width: $tab) {
     display: none;
   }
 }
 .main-nav__item {
   margin-bottom: 11px;
-  @media screen and (min-width: $tab){
+  @media screen and (min-width: $tab) {
     margin: 0;
-    margin-right: 35px;
+    margin-right: 33px;
     &:last-child {
       margin-right: 0;
     }
+  }
+  @media screen and (min-width: $desk) {
+    margin-right: 35px;
   }
 }
 .main-nav__link {
@@ -78,7 +82,7 @@
 }
 .main-nav__link--active {
   @media screen and (min-width: $tab) {
-    padding-bottom: 2px;
-    border-bottom: 1px solid $orange
+    padding-bottom: 0px;
+    border-bottom: 2px solid $orange
   }
 }
