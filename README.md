@@ -1,1 +1,1 @@
-https://antpzk90.github.io/test_academy/
+https://antpzk90.github.io/kolesa_test/
