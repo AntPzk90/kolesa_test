@@ -1,0 +1,40 @@
+.toggle{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  @media screen and (min-width:$tab-portret) {
+    display: none;
+  }
+}
+.toggle__dscr{
+  color: $white;
+  margin: 0;
+  width: 50%;
+}
+.toggle__btn{
+  height: 48px;
+  border: none;
+  color: $white;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: $grey;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid $white;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  &:active{
+    background-color: $red;
+  }
+}
+.toggle__btn--1column{
+  margin-left: 20px;
+}
+.toggle__btn--2column{
+  margin-left: auto;
+}
+

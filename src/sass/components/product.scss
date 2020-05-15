@@ -1,0 +1,141 @@
+.product {
+  position: relative;
+  background-color: $white;
+  padding: 5px;
+  box-sizing: border-box;
+  @media screen and (min-width:$tab) {
+    max-width: 264px;
+    width: 100%;
+    padding: 27px;
+    box-sizing: content-box;
+    -webkit-box-shadow: 0px 11px 31px -10px rgba(157,157,157,1);
+    -moz-box-shadow: 0px 11px 31px -10px rgba(157,157,157,1);
+    box-shadow: 0px 11px 31px -10px rgba(157,157,157,1);
+  }
+}
+.product--alloy {
+  &:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    background-image:url("../img/sprite.svg#icon-fill");
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+}
+.product__img-wrapper {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  display: block
+}
+.product__img {
+  width: 100%;
+  object-fit: contain;
+}
+.product__like-svg{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.product__like-svg {
+  cursor: pointer;
+  fill: transparent;
+  &:hover {
+    fill: $grey;
+  }
+  use {
+    fill: transparent;
+    transition: fill ease.3s;
+    &:hover {
+      fill: $grey;
+    }
+  }
+}
+.product__like-svg--active {
+  fill: $red;
+  use {
+    fill: $red;
+  }
+}
+.product__reviews {
+  display: block;
+  font-size: 13px;
+  line-height: 22px;
+  color: $grey;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  &:after {
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image:url("../img/icon-reviews.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+  }
+}
+.product__reviews--active {
+  color: $red;
+  transition: all ease .1s;
+  &:after {
+    background-image:url("../img/icon-reviews-active.png");
+  }
+  &:before {
+    content: "";
+    opacity: 0;
+    width:100px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image:url("../img/stars.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50%;
+    transition: opacity ease .5s;
+  }
+  &:hover {
+    font-size: 0;
+    &:after {
+      opacity: 0;
+    }
+    &:before {
+      opacity: 1;
+    }
+  }
+}
+.product__title {
+  font-size: 16px;
+  line-height: 22px;
+  color: $black;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.product__title-link {
+  cursor: pointer;
+  text-decoration: none;
+  transition: color ease .3s;
+  &:hover,
+  &:focus {
+    color: $light-blue;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+}
+.product__price{
+  max-width: 60%;
+  width: 100%;
+}
+
+

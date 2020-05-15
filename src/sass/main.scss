@@ -2,17 +2,15 @@
 @import './variables.scss';
 @import './mixins.scss';
 @import './settings.scss';
-//header
+@import './slick.scss';
 @import './components/header.scss';
-@import './components/main-nav.scss';
-@import './components/tel-link.scss';
-@import './components/menthor-list.scss';
-@import './components/user-list.scss';
-@import './components/scroll-block.scss';
-@import './components/btn.scss';
-//main
-@import './components/main-block.scss';
-@import './components/about-menthors.scss';
-@import './components/program-selection.scss';
-@import './components/swiper.scss';
+@import './components/toggle.scss';
+@import './components/main-content.scss';
+@import './components/products.scss';
+@import './components/product.scss';
+@import './components/parameters-table.scss';
+@import './components/price.scss';
+@import './components/cart-btn.scss';
+@import './components/popup.scss';
+@import './components/footer.scss';
 

@@ -1,0 +1,26 @@
+.parameters-table{
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+}
+.parameters-table__colunm {
+  font-size: 13px;
+  line-height: 1.4;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.parameters-table__link {
+  color: $light-blue;
+  text-decoration: none;
+  text-align: right;
+  transition: color ease .3s;
+  &:hover,
+  &:focus {
+    color: $red;
+    text-decoration: underline;
+  }
+  &:active {
+    opacity: .8;
+  }
+}

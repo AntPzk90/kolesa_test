@@ -7,7 +7,7 @@
 *.psd
 *.sublime*
 package-lock.json
-/build
+build/
 node_modules/
 npm-debug.*
 source/css/*.css

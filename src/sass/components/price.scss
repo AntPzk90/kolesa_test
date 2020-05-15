@@ -1,0 +1,57 @@
+.price__num {
+  font-size: 16px;
+  line-height: 20px;
+  color: $red;
+  font-weight: bold;
+  display: block;
+}
+.price__bonus{
+  font-size: 13px;
+  line-height: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  position: relative;
+  &:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-image:url("../img/sprite.svg#icon-pig");
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    transition: all ease .3s;
+  }
+  &:hover {
+    &:before {
+      transform: scale(1.1);
+    }
+  }
+}
+.price__bonus--active {
+  &::after {
+    content: "";
+    display: block;
+    opacity: 0;
+    background-color: $black;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: -5px;
+    left: 7px;
+    animation: pigAnimation .5s linear;
+  }
+}
+@keyframes pigAnimation {
+  0% {
+    opacity: 1;
+    top: -5px;
+  }
+  100% {
+    opacity: 1;
+    top: 5px;
+  }
+}
