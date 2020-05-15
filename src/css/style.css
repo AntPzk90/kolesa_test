@@ -660,13 +660,12 @@ body {
     background-position: 50%; }
 
 .product__reviews--active {
-  color: #b10000;
-  -webkit-transition: all ease .1s;
-  transition: all ease .1s; }
+  color: #b10000; }
   .product__reviews--active:after {
     background-image: url("../img/icon-reviews-active.png"); }
   .product__reviews--active:before {
     content: "";
+    display: block;
     opacity: 0;
     width: 100px;
     height: 20px;
@@ -680,7 +679,7 @@ body {
     -webkit-transition: opacity ease .5s;
     transition: opacity ease .5s; }
   .product__reviews--active:hover {
-    font-size: 0; }
+    color: transparent; }
     .product__reviews--active:hover:after {
       opacity: 0; }
     .product__reviews--active:hover:before {

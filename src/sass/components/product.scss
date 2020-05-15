@@ -86,12 +86,12 @@
 }
 .product__reviews--active {
   color: $red;
-  transition: all ease .1s;
   &:after {
     background-image:url("../img/icon-reviews-active.png");
   }
   &:before {
     content: "";
+    display: block;
     opacity: 0;
     width:100px;
     height: 20px;
@@ -105,7 +105,7 @@
     transition: opacity ease .5s;
   }
   &:hover {
-    font-size: 0;
+    color: transparent;
     &:after {
       opacity: 0;
     }
